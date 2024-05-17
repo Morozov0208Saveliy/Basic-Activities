@@ -21,8 +21,9 @@ class ActivityC : AppCompatActivity() {
         }
         buttonToD = findViewById(R.id.act_C_to_Act_D)
         buttonToD?.setOnClickListener {
-            finish()
             val intent = Intent(this, ActivityD::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
         }
         buttonClose = findViewById(R.id.act_C_to_Act_C)
@@ -31,9 +32,7 @@ class ActivityC : AppCompatActivity() {
         }
         closeStack = findViewById(R.id.close_stack)
         closeStack?.setOnClickListener {
-            finish()
-            val intent = Intent(this, ActivityA::class.java)
-            startActivity(intent)
+            finishAffinity()
         }
 
     }
