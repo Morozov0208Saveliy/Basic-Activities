@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196f3"
+    tools:context=".ActivityC">
+
+    <Button
+        android:id="@+id/act_C_to_Act_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="100dp"
+        android:background="@color/purple_200"
+        android:text="Open ActivityA" />
+
+    <Button
+        android:id="@+id/act_C_to_Act_D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:background="@color/purple_200"
+        android:text="Open ActivityD" />
+
+    <Button
+        android:id="@+id/act_C_to_Act_C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:background="@color/purple_200"
+        android:text="Close ActivityC" />
+
+    <Button
+        android:id="@+id/close_stack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:background="@color/purple_200"
+        android:text="Close Stack" />
+
+</FrameLayout>
